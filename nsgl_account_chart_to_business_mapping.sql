@@ -1,0 +1,16 @@
+create table if not exists nsgl_account_chart_to_business_mapping(
+ns_set_id integer not null,
+nsgl_account_id integer null,
+mapping_set_id integer null,
+department varchar(255) null,
+business_indicator integer null,
+nsgl_account_mapped_to_function char null,
+is_active char null,
+function_name varchar(255) null,
+function_type varchar(255) null,
+creation_cr varchar(255) null,
+modified_cr varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint nsgl_account_chart_to_business_mapping_pk primary key(ns_set_id));
